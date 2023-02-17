@@ -1,1 +1,131 @@
-/*# sourceMappingURL=main.css.map */
+/* Variables */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: hsl(217deg, 54%, 11%);
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 330px;
+  padding: 20px;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 15px;
+}
+.card__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 280px;
+  background-image: url("../images/image-equilibrium.jpg");
+  background-size: cover;
+  border-radius: 8px;
+}
+.card__img img {
+  opacity: 0;
+}
+.card__text-box {
+  margin-top: 22px;
+  padding: 0 4px;
+}
+.card__title {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 22px;
+}
+.card__desc {
+  margin: 16px 0;
+  line-height: 24px;
+}
+.card__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__price, .card__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.card__price {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 500;
+}
+.card hr {
+  margin: 20px 0;
+  border: 1px solid hsl(215deg, 32%, 27%);
+}
+.card__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.card__author img {
+  width: 30px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.card__author span {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=main.css.map */
