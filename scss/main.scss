@@ -40,20 +40,39 @@ body {
 	background-color: $card-background-color;
 	border-radius: 15px;
 
+
 	&__img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		width: 280px;
 		height: 280px;
 		background-image: url('../images/image-equilibrium.jpg');
 		background-size: cover;
 		border-radius: 8px;
+		overflow: hidden;
+        
 
 		img {
 			opacity: 0;
 		}
+
 	}
+
+    &__img-bg{
+        width: 100%;
+        height: 100%;
+        background-color: hsla(178, 100%, 50%, 60%);
+        display: flex;
+		justify-content: center;
+		align-items: center;
+        opacity: 0;
+        transition: opacity .3s;
+        cursor: pointer;
+    }
+
+    &__img:hover > .card__img-bg, img{
+        opacity: 1;
+    }
+
+
 
 	&__text-box {
 		margin-top: 22px;
@@ -63,6 +82,12 @@ body {
 		color: $white-color;
 		font-weight: 700;
 		font-size: 22px;
+        cursor: pointer;
+        transition: color .3s;
+
+        &:hover{
+            color: $secondary-color;
+        }
 	}
 	&__desc {
 		margin: 16px 0;
@@ -90,30 +115,36 @@ body {
 		margin: 20px 0;
 		border: 1px solid $hr-background-color;
 	}
-    &__author{
-        display: flex;
-        align-items: center;
-        gap: 15px;
+	&__author {
+		display: flex;
+		align-items: center;
+		gap: 15px;
 
-        img{
-            width: 30px;
-            border: 1px solid $white-color;
-            border-radius: 50%;
-        }
-        span{
-            color: $white-color;
-        }
-    }
+		img {
+			width: 30px;
+			border: 1px solid $white-color;
+			border-radius: 50%;
+		}
+		span {
+			color: $white-color;
+            cursor: pointer;
+            transition: color .3s;
+
+            &:hover{
+                color: $secondary-color;
+            }
+		}
+	}
 }
 
 .attribution {
-    color: $white-color;
+	color: $white-color;
 	margin-top: 20px;
 	font-size: 11px;
 	text-align: center;
 
 	a {
-        text-decoration: none;
-        color: $white-color;
+		text-decoration: none;
+		color: $white-color;
 	}
 }
